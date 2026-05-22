@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tactical_app/core/config/app_colors.dart';
+import 'package:tactical_app/core/config/app_config.dart';
 import 'package:tactical_app/core/config/app_text_styles.dart';
 import 'package:tactical_app/core/config/app_dimens.dart';
 import 'package:webview_flutter/webview_flutter.dart';
@@ -73,6 +74,7 @@ class _AppWebViewState extends State<AppWebView> {
     _controller = WebViewController()
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
       ..setBackgroundColor(AppColors.background)
+      ..setUserAgent(AppConfig.webViewUserAgent)
       ..setNavigationDelegate(
         NavigationDelegate(
           onPageStarted: (url) {

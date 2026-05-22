@@ -47,4 +47,8 @@ class AppConfig {
   /// Privacy Policy URL
   static const String privacyPolicyUrl =
       "https://github.com/septiian07/v-app/blob/main/privacy-policy.md";
+
+  /// WebView user agent for Riot's web endpoints to ensure compatibility.
+  static const String webViewUserAgent =
+      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
 }
