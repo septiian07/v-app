@@ -7,4 +7,6 @@ class AppAssets {
   static const String icRadianitePoints =
       'assets/icons/ic_radianite_points.webp';
   static const String icKingdomCredits = 'assets/icons/ic_kingdom_credits.webp';
+
+  static const String imgLogo = 'assets/images/img_logo.png';
 }

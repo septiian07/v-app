@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:tactical_app/core/config/app_config.dart';
+import 'package:tactical_app/core/constants/assets_constant.dart';
 import 'package:tactical_app/di/injection.dart';
 import 'package:tactical_app/core/config/app_routes.dart';
-
 import 'package:tactical_app/core/config/app_colors.dart';
 import 'package:tactical_app/core/config/app_dimens.dart';
-import 'package:tactical_app/core/config/app_text_styles.dart';
 import 'package:tactical_app/features/splash/bloc/splash_bloc.dart';
 import 'package:tactical_app/features/splash/bloc/splash_event.dart';
 import 'package:tactical_app/features/splash/bloc/splash_state.dart';
@@ -33,38 +31,10 @@ class SplashScreen extends StatelessWidget {
         child: Scaffold(
           backgroundColor: AppColors.background,
           body: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                // ── App Logo ────────────────────────────────────────────────
-                Icon(
-                  Icons.analytics_outlined,
-                  color: AppColors.primary,
-                  size: AppDimens.splashLogoSize,
-                ),
-                SizedBox(height: AppDimens.h24),
-
-                // ── App Name ────────────────────────────────────────────────
-                Text(
-                  AppConfig.appName,
-                  style: AppTextStyles.titleLg.copyWith(
-                    letterSpacing: AppDimens.splashLetterSpacing,
-                    color: Colors.white,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                SizedBox(height: AppDimens.h48),
-
-                // ── Loading Indicator ───────────────────────────────────────
-                SizedBox(
-                  width: AppDimens.splashIndicatorSize,
-                  height: AppDimens.splashIndicatorSize,
-                  child: const CircularProgressIndicator(
-                    color: AppColors.primary,
-                    strokeWidth: AppDimens.splashIndicatorStrokeWidth,
-                  ),
-                ),
-              ],
+            child: Image.asset(
+              AppAssets.imgLogo,
+              width: AppDimens.splashLogoSize,
+              height: AppDimens.splashLogoSize,
             ),
           ),
         ),
