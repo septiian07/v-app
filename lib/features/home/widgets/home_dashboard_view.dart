@@ -291,25 +291,25 @@ class HomeDashboardView extends StatelessWidget {
           onTap: () {},
           gridItems: [
             _GridItem(
-              label: 'Featured Bundle',
+              label: l10n.storeFeaturedBundleTitle,
               icon: Icons.star,
               accentColor: AppColors.featuredBundleAccent,
               route: AppRoutes.storefrontFeaturedBundle,
             ),
             _GridItem(
-              label: 'Daily Offer',
+              label: l10n.storeDailyOffersTitle,
               icon: Icons.schedule,
               accentColor: AppColors.vpAccent,
               route: AppRoutes.storefrontDailyOffers,
             ),
             _GridItem(
-              label: 'Night Market',
+              label: l10n.storeNightMarketTitle,
               icon: Icons.nights_stay,
               accentColor: AppColors.agentsAccent,
               route: AppRoutes.storefrontNightMarket,
             ),
             _GridItem(
-              label: 'Accessory',
+              label: l10n.storeAccessoryTitle,
               icon: Icons.local_mall,
               accentColor: AppColors.radianiteAccent,
               route: AppRoutes.storefrontAccessoryStore,

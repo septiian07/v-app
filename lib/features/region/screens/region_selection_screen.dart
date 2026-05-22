@@ -35,13 +35,9 @@ class RegionSelectionScreen extends StatelessWidget {
 
     final regions = [
       RegionOption(code: 'na', name: l10n.regionNaName, icon: Icons.public),
-      RegionOption(code: 'eu', name: l10n.regionEuName, icon: Icons.language),
-      RegionOption(code: 'ap', name: l10n.regionApName, icon: Icons.explore),
-      RegionOption(
-        code: 'kr',
-        name: l10n.regionKrName,
-        icon: Icons.g_translate,
-      ),
+      RegionOption(code: 'eu', name: l10n.regionEuName, icon: Icons.public),
+      RegionOption(code: 'ap', name: l10n.regionApName, icon: Icons.public),
+      RegionOption(code: 'kr', name: l10n.regionKrName, icon: Icons.public),
     ];
 
     return BlocProvider<RegionBloc>(
@@ -148,4 +144,3 @@ class RegionSelectionScreen extends StatelessWidget {
     );
   }
 }
-

@@ -16,7 +16,7 @@ class AppConfig {
   static const int sendTimeout = 30000;
 
   /// Application name.
-  static const String appName = 'Akz VLR-App';
+  static const String appName = 'V-App';
 
   /// Secure storage keys.
   static const String accessTokenKey = 'access_token';
