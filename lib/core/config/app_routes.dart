@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:tactical_app/features/auth/screens/login_screen.dart';
 import 'package:tactical_app/features/home/screens/home_screen.dart';
+import 'package:tactical_app/features/home/screens/privacy_policy_screen.dart';
 import 'package:tactical_app/features/home/screens/riot_version_screen.dart';
 import 'package:tactical_app/features/storefront/screens/storefront_screen.dart';
 import 'package:tactical_app/features/storefront/screens/featured_bundle_screen.dart';
@@ -29,6 +30,7 @@ class AppRoutes {
   static const String storefrontAccessoryStore = '/storefront/accessory-store';
   static const String accountXp = '/account-xp';
   static const String languageSelection = '/language-selection';
+  static const String privacyPolicy = '/privacy-policy';
 
   // ── Route Map ─────────────────────────────────────────────────────────────
   static Map<String, WidgetBuilder> get routes => {
@@ -43,6 +45,7 @@ class AppRoutes {
     storefrontNightMarket: (_) => const NightMarketScreen(),
     storefrontAccessoryStore: (_) => const AccessoryStoreScreen(),
     languageSelection: (_) => const LanguageSelectionScreen(),
+    privacyPolicy: (_) => const PrivacyPolicyScreen(),
   };
 
   /// Initial route shown at app startup.

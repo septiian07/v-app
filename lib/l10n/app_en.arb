@@ -182,6 +182,10 @@
   "settingsLogout": "Logout",
   "settingsAppVersion": "App Version",
   "settingsRiotClientVersion": "Riot Client Version",
+  "settingsPrivacyPolicy": "Privacy Policy",
+  "@settingsPrivacyPolicy": {
+    "description": "Label for the privacy policy item in Settings"
+  },
   "languageTitle": "SELECT LANGUAGE",
   "homeTabDashboard": "Dashboard",
   "homeTabSettings": "Setting",

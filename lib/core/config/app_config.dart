@@ -43,4 +43,8 @@ class AppConfig {
 
   /// PvP net base URL template dynamically formatted
   static String pvpBaseUrl(String region) => 'https://pd.$region.a.pvp.net';
+
+  /// Privacy Policy URL
+  static const String privacyPolicyUrl =
+      "https://github.com/septiian07/v-app/blob/main/privacy-policy.md";
 }

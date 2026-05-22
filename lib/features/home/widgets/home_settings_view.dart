@@ -95,6 +95,16 @@ class HomeSettingsView extends StatelessWidget {
                         ),
                         _buildDivider(),
                         _buildSettingTile(
+                          icon: Icons.privacy_tip_outlined,
+                          title: l10n.settingsPrivacyPolicy,
+                          onTap: () {
+                            Navigator.of(
+                              context,
+                            ).pushNamed(AppRoutes.privacyPolicy);
+                          },
+                        ),
+                        _buildDivider(),
+                        _buildSettingTile(
                           icon: Icons.favorite_border,
                           title: l10n.settingsDonate,
                           onTap: () async {

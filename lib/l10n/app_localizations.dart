@@ -1154,6 +1154,12 @@ abstract class AppLocalizations {
   /// **'Riot Client Version'**
   String get settingsRiotClientVersion;
 
+  /// Label for the privacy policy item in Settings
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy Policy'**
+  String get settingsPrivacyPolicy;
+
   /// No description provided for @languageTitle.
   ///
   /// In en, this message translates to:

@@ -537,6 +537,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsRiotClientVersion => 'Riot Client Version';
 
   @override
+  String get settingsPrivacyPolicy => 'Privacy Policy';
+
+  @override
   String get languageTitle => 'SELECT LANGUAGE';
 
   @override

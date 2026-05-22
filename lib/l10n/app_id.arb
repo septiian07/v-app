@@ -175,6 +175,10 @@
   "settingsLogout": "Keluar",
   "settingsAppVersion": "Versi Aplikasi",
   "settingsRiotClientVersion": "Versi Riot Client",
+  "settingsPrivacyPolicy": "Kebijakan Privasi",
+  "@settingsPrivacyPolicy": {
+    "description": "Label untuk item kebijakan privasi di Pengaturan"
+  },
   "languageTitle": "PILIH BAHASA",
   "homeTabDashboard": "Dasbor",
   "homeTabSettings": "Pengaturan",

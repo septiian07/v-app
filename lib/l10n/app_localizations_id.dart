@@ -538,6 +538,9 @@ class AppLocalizationsId extends AppLocalizations {
   String get settingsRiotClientVersion => 'Versi Riot Client';
 
   @override
+  String get settingsPrivacyPolicy => 'Kebijakan Privasi';
+
+  @override
   String get languageTitle => 'PILIH BAHASA';
 
   @override
