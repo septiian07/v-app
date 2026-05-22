@@ -16,9 +16,7 @@ class AccessoryStoreCard extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: AppColors.cardSurface,
-        borderRadius: BorderRadius.circular(
-          AppDimens.accessoryStoreCardRadius,
-        ),
+        borderRadius: BorderRadius.circular(AppDimens.accessoryStoreCardRadius),
         border: Border.all(color: AppColors.white10),
       ),
       padding: EdgeInsets.all(AppDimens.accessoryStoreCardPadding),
@@ -33,9 +31,11 @@ class AccessoryStoreCard extends StatelessWidget {
                       fit: BoxFit.contain,
                     ),
                   )
-                : const Icon(
-                    Icons.card_giftcard,
-                    color: AppColors.white10,
+                : Center(
+                    child: const Icon(
+                      Icons.card_giftcard,
+                      color: AppColors.white10,
+                    ),
                   ),
           ),
           SizedBox(height: AppDimens.accessoryStoreSpacingSm),
